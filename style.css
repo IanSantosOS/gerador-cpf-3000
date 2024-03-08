@@ -63,3 +63,19 @@ p>span {
 footer {
   padding-bottom: 1em;
 }
+
+a {
+  transition: opacity .1s ease-out;
+}
+
+a:hover {
+  opacity: .75;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.gap {
+  gap: .5em;
+}

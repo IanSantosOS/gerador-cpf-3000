@@ -4,6 +4,9 @@ Aplicação realizada apenas para fins educacionais. A matemática usada para ve
 
 > OBS: A aplicação ainda está em desenvolvimento o que significa que podem existir bugs, features incompletas e questões como responsividade e acessibilidade ainda em aprimoramento
 
+[![Github Repository](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/IanSantosOS/gerador-cpf-3000)
+[![Github Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=GitHub%20Pages&logoColor=white)](https://iansantosos.github.io/gerador-cpf-3000)
+
 ## Ferramentas
 
 Aqui temos 3 ferramentas
