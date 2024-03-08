@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Máquina de CPF 3000</title>
+</head>
+<body>
+  <h1>Máquina de CPF 3000</h1>
+  <hr>
+  <p>Aplicação feita apenas para fins educacionais. A matemática usada para verificar um cpf é uma informação pública antes mesmo da criação desse site.</p>
+
+  <main>
+    <section>
+      <h2>Verificador de CPF</h2>
+      <hr>
+      <form id="form-verificar-cpf">
+        <input type="text" name="inpVerificarCpf" class="CPF" required>
+        <button>Verificar</button>
+      </form>
+    </section>
+  
+    <section>
+      <h2>CPF Aleatório</h2>
+      <hr>
+      <form id="form-cpf-aleatorio">
+        <input type="text" name="inpCpfAleatorio" class="CPF" readonly required>
+        <button>Gerar CPF Aleatório</button>
+      </form>
+    </section>
+  
+    <section>
+      <h2>Gerador de CPF</h2>
+      <hr>
+      <form id="form-gerar-cpf">
+        <input type="text" name="inpGerarCpf" class="CPF" required>
+        <button>Gerar CPF Aleatório</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <section>
+      <h2>Como Funciona o Cálculo do CPF?</h2>
+      <hr>
+      <ul>
+        <li>Os primeiros oito dígitos formam o número-base definido pela Receita Federal no momento da inscrição.</li>
+        <li>O nono dígito, define a Região Fiscal responsável pela inscrição.</li>
+        <li>O décimo e o décimo primeiro são os dígitos que vão verificar os 9 anteriores a eles</li>
+      </ul>
+
+      <img src="/img/cpf.jpg" alt="Imagem explicativa do CPF">
+
+      <p>
+        <strong>O nono digito vai depender do estado de onde foi emitido:</strong>
+
+        <span>1- DF, GO, MS MT e TO</span>
+        <span>2- AC, AM, AP, PA, RO e RR</span>
+        <span>3- CE, MA e PI</span>
+        <span>4- AL, PB, PE, RN</span>
+        <span>5- BA e SE</span>
+        <span>6- MG</span>
+        <span>7- ES e RJ</span>
+        <span>8- SP</span>
+        <span>9- PR e SC</span>
+        <span>0- RS</span>
+      </p>
+
+      <p>Podem existir casos específicos em que esse nono dígito não esteja de acordo com os determinados acima.</p>
+
+      <p>
+        <strong>Então calculamos os dígitos verificadores</strong>
+        <br>
+        Exemplo:
+        <br><br>
+        ABC.DEF.GHI-JK
+        <br>
+        A × 10 + B × 9 + C × 8 + D × 7 + E × 6 + F × 5 + G × 4 + H × 3 + I × 2 = TOTAL
+        <br><br>
+        <strong>Depois pegamos o resto da divisão do TOTAL com o número 11</strong>
+        <br><br>
+        TOTAL % 11 = RESTO (% é usado na programação para pegar o resto da divisão e não a porcentagem em si)
+        <br><br>
+        <strong>E então calculamos o número J realizando a diferença entre o RESTO e o número 11</strong>
+        <br><br>
+        11 - RESTO = J
+        <br><br>
+        <strong>O mesmo calculo irá servir para o número K, com a única diferença é que vamos começar pela letra B e terminar com a letra J na hora da multiplicação</strong>
+        <br><br>
+        B × 10 + C × 9 + D × 8 + E × 7 + F × 6 + G × 5 + H × 4 + I × 3 + J × 2 = TOTAL
+        <br><br>
+        TOTAL % 11 = RESTO
+        <br><br>
+        11 - RESTO = K
+      </p>
+
+      <h3>Referências</h3>
+      <ul>
+        <li>
+          <a target="_blank" href="https://clubes.obmep.org.br/blog/a-matematica-nos-documentos-a-matematica-dos-cpfs/">OBMEP | A Matematica nos documentos - A matematica dos CPFs</a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.campuscode.com.br/conteudos/o-calculo-do-digito-verificador-do-cpf-e-do-cnpj">CAMPUS CODE | O cálculo do dígito verificador do CPF e do CNPJ</a>
+        </li>
+      </ul>
+    </section>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
