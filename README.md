@@ -11,9 +11,13 @@ Aplicação realizada apenas para fins educacionais. A matemática usada para ve
 
 Aqui temos 3 ferramentas
 
-- um verificador de cpf que irá verificar seguindo as regras do calculo matemático do cpf
-- um gerador de cpf aleatório, simples rápido e prático
-- um gerador de cpf seguindo como base um estado selecionado pelo usuário e no futuro dígitos pré-colocados
+- um verificador de cpf que irá verificar seguindo as regras do calculo matemático do cpf 💿
+- um gerador de cpf aleatório, simples rápido e prático ✅
+- um gerador de cpf seguindo como base um estado selecionado pelo usuário e no futuro dígitos pré-colocados ❌
+
+> Verificador incompleto (está verificando apenas a quantidade de números do cpf)
+
+> Gerador de CPF não implementado
 
 ## Referências
 
