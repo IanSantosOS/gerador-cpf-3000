@@ -35,11 +35,18 @@ hr {
 input {
   padding: .3em;
   border-radius: .5em;
+  font-size: large;
 }
 
 button {
   cursor: pointer;
-  padding: .3em;
+  padding: .64em .5em;
+  border-radius: .5em;
+  transition: .15s background-color ease-in-out;
+}
+
+button:hover {
+  background-color: #cfcfcf;
 }
 
 ol,
